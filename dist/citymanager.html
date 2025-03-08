@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <body>
+        <title>Song List</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Artist</th>
+                <th>Year</th>
+                <th>Personal Rating</th>
+            </tr>
+            <tbody id="table-body">
+                <!--Data will be inserted here dynamically-->
+                
+
+            </tbody>
+        </table>
+        <h2>Add Song</h2>
+        <form id="AddSong"> 
+                <input type="text" id="titleInput" placeholder="Enter title name"><br><br>
+                <input type="text" id="artistInput" placeholder="Enter artist name"><br><br>
+                <input type="number" id="yearInput" placeholder="Enter year"><br><br>
+                <input type="number" id="personal_ratingInput" placeholder="Enter personal rating"><br><br>
+                <input type ="submit" value = "Save Song">
+                
+        </form>
+        <h2>Delete Song</h2>
+        <form id="DeleteSong"> 
+                <input type="text" id="titleInputDelete" placeholder="Enter title name"><br><br>
+                <input id="DeleteSongButton" type="button" value = "Delete Song">
+        </form>
+        <h2>Update Song</h2>
+        <form id="UpdateSongRating"> 
+                <input type="text" id="titleInputUpdate" placeholder="Enter title name"><br><br>
+                <input type="number" id="personal_ratingInputUpdate" placeholder="Enter personal rating"><br><br>
+                <input id="UpdateSongButton" type="button" value = "Update">
+        </form>
+
+        <div id="greeting">
+        
+        </div>
+        <h3>Logout</h3>
+        <form id="logoutForm">
+            <input type="submit" value="Logout">
+        </form>
+    </body>
+    <script src="citymanager.bundle.js"></script>
+</head>
